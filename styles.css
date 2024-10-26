@@ -28,22 +28,38 @@ header {
 /* Banner */
 .banner {
     position: relative;
-    height: 100vh;
+    height: 100vh; /* Altura do banner ocupando 100% da altura da janela */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o banner */
 }
 
-.banner img{
-    opacity: 30%;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.banner img {
+    position: absolute; /* Permite que a imagem seja posicionada em relação ao banner */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 100%; /* Faz a imagem ocupar 100% da largura do banner */
+    height: 100%; /* Faz a imagem ocupar 100% da altura do banner */
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo a proporção */
+    transform: translate(-50%, -50%); /* Centraliza a imagem */
+    opacity: 0.3; /* Opacidade da imagem */
+    transition: opacity 0.3s ease; /* Transição suave para opacidade */
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner {
+        height: 70vh; /* Altura reduzida em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh; /* Altura ainda mais reduzida em telas pequenas */
+    }
+}
+
 
 .banner-content {
     z-index: 1;
