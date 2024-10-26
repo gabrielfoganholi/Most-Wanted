@@ -100,6 +100,64 @@ header {
     }
 }
 
+.banner-content {
+    position: relative; /* Permite que o conteúdo fique sobre a imagem */
+    z-index: 1; /* Certifica que o conteúdo fique acima da imagem */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Garante que o conteúdo esteja centralizado horizontalmente */
+    padding: 0 15px; /* Adiciona um pequeno padding */
+}
+
+/* Estilo do título */
+.banner-content h1 {
+    font-size: 3rem; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+/* Estilo do parágrafo */
+.banner-content p {
+    font-size: 1.5rem; /* Tamanho do texto */
+    margin-bottom: 2rem; /* Espaço abaixo do parágrafo */
+}
+
+/* Estilo do botão */
+.banner-content a {
+    background-color: #28a745; /* Cor do botão */
+    padding: 1rem 2rem; /* Padding do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    display: inline-block; /* Garante que o botão se comporte corretamente */
+    margin-bottom: 1rem; /* Espaço abaixo do botão */
+}
+
+/* Efeito de hover no botão */
+.banner-content a:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem; /* Tamanho do título menor para dispositivos móveis */
+    }
+    
+    .banner-content p {
+        font-size: 1.2rem; /* Tamanho do parágrafo menor para dispositivos móveis */
+    }
+
+    .banner-content a {
+        padding: 0.75rem 1.5rem; /* Padding menor para o botão */
+    }
+
+    .banner {
+        margin-top: 70px; /* Ajuste a margem para telas menores, se necessário */
+    }
+}
+
 
 /* Seção de redes sociais */
 .social-icons {
