@@ -37,6 +37,12 @@ header {
 
 .banner img{
     opacity: 30%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .banner-content {
